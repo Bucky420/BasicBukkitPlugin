@@ -16,7 +16,7 @@ after_success:
 >>>>>>> refs/remotes/origin/master
 deploy:
   provider: releases
-  api_key: $KEY
+  api_key: $KEY 
   file_glob: true
   file: ${HOME}/build/${TRAVIS_REPO_SLUG}/target/*.jar
   skip_cleanup: true
