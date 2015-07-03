@@ -4,12 +4,12 @@ before_deploy:
   - git config --global user.name "Travis CI"
   - export GIT_TAG=$TRAVIS_BRANCH-B$TRAVIS_BUILD_NUMBER
   - git tag $GIT_TAG -a -m "Generated tag from TravisCI for build $TRAVIS_BUILD_NUMBER"
-  - git push -q https://$TAGPERM@github.com/codydbgt/BasicBukkitPlugin --tags
+  - git push -q https://$KEY@github.com/codydbgt/BasicBukkitPlugin --tags
 deploy:
   provider: releases
-  api_key: "19b0f968783594066e7430299ca01738accf4402"
+  api_key: $KEY
   file_glob: true
   file: ${HOME}/build/${TRAVIS_REPO_SLUG}/target/*.jar
   skip_cleanup: true
   on:
-    tags: true
+    tags: false
