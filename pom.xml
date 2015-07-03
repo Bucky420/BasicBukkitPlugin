@@ -16,6 +16,9 @@
             <version>1.6.4-R2.0</version>
         </dependency>
     </dependencies>
+<properties>
+    <finalName>${project.artifactId}-${project.version}</finalName>
+</properties>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <resources>
