@@ -21,7 +21,9 @@
             <profile>
             <id>default</id>
             <activation>
-				<activeByDefault>true</activeByDefault>
+				<property>
+                    <name>!env.TRAVIS_BUILD_NUMBER</name>
+                </property>
             </activation>
             <properties>
                 <project.build.number>${project.version}</project.build.number>
