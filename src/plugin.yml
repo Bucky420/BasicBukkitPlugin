@@ -1,0 +1,7 @@
+main: ntg.codydbgt.basic.BukkitPlugin
+name: itemban
+version: 0.5
+softdepend: [Permissions]
+commands:
+   basic:
+      usage: /<command>
