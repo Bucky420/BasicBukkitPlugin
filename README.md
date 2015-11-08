@@ -1,3 +1,3 @@
 # BasicBukkitPlugin
 This plugin is for learning and bukkit coding practices
-https://travis-ci.org/codydbgt/BasicBukkitPlugin.svg?branch=master
+[![Build Status](https://travis-ci.org/codydbgt/BasicBukkitPlugin.svg?branch=master)](https://travis-ci.org/codydbgt/BasicBukkitPlugin)
